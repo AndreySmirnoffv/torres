@@ -1,7 +1,7 @@
 const TelegramApi = require('node-telegram-bot-api')
 const {keyboard} = require('./assets/keyboard/keyboard')
 const { checkSub } = require('./assets/scripts/logic')
-const bot = new TelegramApi('6994173540:AAHes5TMu_jC3avMh63n90WsfRshBR6Wnk0', {polling: true})
+const bot = new TelegramApi('', {polling: true})
 
 bot.on('message', async msg => {
     if(msg.text === '/start'){
